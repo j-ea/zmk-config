@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -61,10 +62,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-             &kp ESCAPE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR      &kp PRCNT    &kp CARET   &kp AMPS  &kp ASTERISK  &kp LPAR  &kp RPAR      &none
-&mt LEFT_SHIFT CAPSLOCK     &none   &none     &none     &none          &none    &kp MINUS  &kp EQUAL      &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-              &kp LCTRL     &none   &none     &none     &none          &none    &kp UNDER   &kp PLUS      &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                           &kp LGUI     &to 0  &kp BACKSPACE    &kp SPACE  &kp ENTER       &kp TAB
+             &kp ESCAPE    &kp EXCL        &kp AT      &kp HASH      &kp DLLR      &kp PRCNT    &kp CARET   &kp AMPS  &kp ASTERISK  &kp LPAR  &kp RPAR      &none
+&mt LEFT_SHIFT CAPSLOCK       &none         &none         &none         &none          &none    &kp MINUS  &kp EQUAL      &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+              &kp LCTRL  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3    &kp UNDER   &kp PLUS      &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                                                       &kp LGUI         &to 0  &kp BACKSPACE    &kp SPACE  &kp ENTER       &kp TAB
             >;
         };
     };
