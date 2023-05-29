@@ -33,10 +33,9 @@
             label = "HT_LAYERS";
             bindings =
                 <&mo>,
-                <&mo>;
+                <&tog>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <38>;
             tapping-term-ms = <200>;
         };
     };
@@ -74,7 +73,7 @@
             >;
         };
 
-        layer_3{
+        layer_3 {
             label = "wasd-num";
             bindings = <
 &trans           &none    &kp UP_ARROW            &none   &none   &none    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_SUBTRACT    &kp KP_DIVIDE  &trans
